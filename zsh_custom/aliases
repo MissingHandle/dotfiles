@@ -1,0 +1,39 @@
+# Shell
+  alias edit_zsh='subl ~/.zshrc &'
+  alias edit_aliases='subl $ZSH_CUSTOM/aliases &'
+  alias reload='source ~/.zshrc'
+
+# Git
+  alias g='git'
+  alias gs='git status'
+  alias ga='git add'
+  alias gc='git checkout'
+  alias gd='git diff'
+  alias gdc='git diff --cached'
+  alias gb='git branch'
+  alias gcm='git commit'
+  alias gcmm='git commit -m'
+  alias gl='git log'
+  alias push='git push'
+  alias pull='git checkout master; git pull; git checkout -'
+  alias rebase='git rebase'
+  alias rebase_on_self='git rebase -i `git common-ancestor`'
+  alias rmaster='git rebase -i origin/master'
+  alias merge='git merge'
+
+# Ruby et. al.
+  alias  b='nocorrect bundle'
+  alias be='nocorrect bundle exec'
+  alias bi='nocorrect bundle install'
+
+# Rails
+  alias up='bundle exec rails s'
+  alias master_structure='git checkout origin/master -- db/structure.sql'
+
+  alias dbredo='bundle exec rake db:drop db:create db:structure:load db:migrate db:seed db:test:prepare'
+
+# Work
+  alias cdsnap='cd ~/Code/SnapPea'
+  alias cdsnap2='cd ~/Code/snap2'
+  alias cdint='cd ~/Code/fooda_integration'
+  alias cdderp='cd ~/Code/fooda_deploybot'

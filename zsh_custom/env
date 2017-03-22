@@ -1,0 +1,21 @@
+#
+# Env Vars
+#
+
+  HISTFILE=~/.histfile
+  HISTSIZE=1000
+  SAVEHIST=1000
+
+  setopt appendhistory
+  unsetopt beep
+  bindkey -e
+
+export ARCHFLAGS='-arch x86_64'
+export EDITOR='subl -w'
+export PGDATA='/usr/local/var/postgres'
+
+#
+# Directory / Prompt Setup
+#
+
+  hash -d code=$HOME/Code
